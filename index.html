@@ -3,27 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to My Site</title>
+  <title>Ria's Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-      background-color: #f0f8ff;
+      background-color: #f2f7fc;
       color: #333;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-      color: #2e8b57;
+
+    header {
+      background-color: #4b79a1;
+      color: white;
+      padding: 30px;
+      text-align: center;
     }
-    p {
-      font-size: 20px;
+
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4b79a1;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    form button {
+      margin-top: 15px;
+      background-color: #4b79a1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ddd;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>Hello! I’m <strong>Ria</strong>.</p>
-  <p>This is a simple static website hosted on AWS S3 using CI/CD 🚀</p>
-  <p>Deployed automatically through CodePipeline and CodeBuild</p>
+
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>Hi, I’m <strong>Ria</strong> — here’s a bit about me and my work.</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I am a passionate learner currently working in the cloud and DevOps domain.</p>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <p>I hold a <strong>B.Tech degree in Artificial Intelligence</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Work Experience</h2>
+      <p>I am working at <strong>Cognizant</strong> as a <strong>GenC Intern</strong> under the <strong>AWS (Cloud) domain</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <p>This website is one of my projects — it's a static site hosted on AWS S3 and deployed automatically using a CI/CD pipeline with CodeCommit, CodeBuild, and CodePipeline.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact Me</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Your Name" required />
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Your Email" required />
+
+        <label>Message:</label>
+        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ria. All rights reserved.
+  </footer>
+
 </body>
 </html>
